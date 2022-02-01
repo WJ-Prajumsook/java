@@ -37,7 +37,39 @@ spring.h2.console.path=/h2-ui
 
 ### Initialize data when startup
 - create `currency.json` file.
-- create currency model.
+- create currency model and entity class.
+```java
+	package org.wj.prajumsook.model;
+
+	import javax.persistence.Column;
+	import javax.persistence.Entity;
+	import javax.persistence.GeneratedValue;
+	import javax.persistence.GenerationType;
+	import javax.persistence.Id;
+	import javax.persistence.Table;
+
+	import lombok.AllArgsConstructor;
+	import lombok.Data;
+	import lombok.NoArgsConstructor;
+
+	@Data
+	@AllArgsConstructor
+	@NoArgsConstructor
+	@Entity
+	@Table
+	public class Currency {
+
+	  @Id
+	  @GeneratedValue(strategy = GenerationType.AUTO)
+	  private Long id;
+
+	  @Column(name = "name")
+	  private String name;
+		// other data fields are the same
+		...
+		...
+	}	
+```	
 - create database table.
 - read json data and put it in the table at startup.
 
