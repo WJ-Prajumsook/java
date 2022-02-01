@@ -2,6 +2,7 @@
 
 ### Table of contents
 - [Setup example project](#setup-example-project)
+- [Method References](method_references.md)	
 
 ## Setup example project
 I use `Spring CLI` to create a `Spring-boot project`, here is the command:
