@@ -1,0 +1,15 @@
+# @name AllCurrencies
+GET http://localhost:8080/currency/all HTTP/1.1
+Content-Type: application/json
+
+###
+
+# @name FindById
+GET http://localhost:8080/currency/id/11 HTTP/1.1
+Content-Type: application/json
+
+###
+
+# @name FindByCode
+GET http://localhost:8080/currency/code/THB HTTP/1.1
+Content-Type: application/json
