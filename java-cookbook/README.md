@@ -14,7 +14,7 @@ Project name `java-cookbook` will created with artifactId `org.wj.prajumsook` an
 ### Configure Datasource, JPA and H2
 Just simple with `Spring-boot` only open file `src/main/resources/application.properties`, here are my properties:
 
-```
+```java
 # Datasource
 spring.datasource.url=jdbc:h2:mem:testdb
 spring.datasource.driverClassName=org.h2.Driver
