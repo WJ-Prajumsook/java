@@ -70,8 +70,6 @@ spring.h2.console.path=/h2-ui
 		...
 	}	
 ```	
-- create database table.
-- read json data and put it in the table at startup.
 
 ### Read JSON from resource
 Here is the code:
@@ -87,7 +85,7 @@ And put it into the table:
 @Autowired
 private CurrencyRepository repository;
 ...
-currencies.stream().forEach(c -> repository.save(c));
+currencies.forEach(c -> repository.save(c));
 ..
 ```
 
