@@ -4,6 +4,9 @@
 - [Setup example project](#setup-example-project)
 - [Method References](method_references.md)	
 
+## Video on Youtube
+[![Part 1](https://img.youtube.com/vi/i2luxp4e714/maxresdefault.jpg)](https://youtu.be/i2luxp4e714)
+
 ## Setup example project
 I use `Spring CLI` to create a `Spring-boot project`, here is the command:
 ```
