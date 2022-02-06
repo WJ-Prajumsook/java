@@ -5,6 +5,9 @@
 - [Method References](method_references.md)
 - [Processing Files with Streams](streams.md)	
 
+## Video on Youtube
+[![Part 1](https://img.youtube.com/vi/i2luxp4e714/maxresdefault.jpg)](https://youtu.be/i2luxp4e714)
+
 ## Setup example project
 I use `Spring CLI` to create a `Spring-boot project`, here is the command:
 ```
@@ -15,7 +18,7 @@ Project name `java-cookbook` will created with artifactId `org.wj.prajumsook` an
 ### Configure Datasource, JPA and H2
 Just simple with `Spring-boot` only open file `src/main/resources/application.properties`, here are my properties:
 
-```
+```java
 # Datasource
 spring.datasource.url=jdbc:h2:mem:testdb
 spring.datasource.driverClassName=org.h2.Driver

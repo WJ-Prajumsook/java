@@ -7,6 +7,9 @@
 
 You can use method reference to access an existing method like a lambda expression.
 
+## Video on Youtube
+[![Part 1](https://img.youtube.com/vi/i2luxp4e714/maxresdefault.jpg)](https://youtu.be/i2luxp4e714)
+
 How to use?
 ```
 Use the double-colon notation to separate an instance references or class name from the method.
