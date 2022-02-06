@@ -10,6 +10,7 @@ import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 import org.wj.prajumsook.model.Currency;
+import org.wj.prajumsook.model.CurrencyDTO;
 import org.wj.prajumsook.service.CurrencyService;
 
 
@@ -21,8 +22,8 @@ public class CurrencyController {
   private CurrencyService service;
 
   @GetMapping("/all")
-  public List<Currency> findAll() {
-    Optional<List<Currency>> currencies = service.findAll();
+  public List<CurrencyDTO> findAll() {
+    Optional<List<CurrencyDTO>> currencies = service.convertToDTO(); //service.findAll();
     if(currencies.isPresent()) {
       return currencies.get();
     } else {
@@ -55,6 +56,16 @@ public class CurrencyController {
       return opt.get();
     } else {
       return new Currency();
+    }
+  }
+
+  @GetMapping("/code")
+  public List<String> convertToCode() {
+    Optional<List<String>> opt = service.convertToCode();
+    if(opt.isPresent()) {
+      return opt.get();
+    } else {
+      return Collections.emptyList();
     }
   }
 }
