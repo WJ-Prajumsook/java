@@ -1,5 +1,8 @@
 # Processing File with Streams
 
+- [The try-with-resources Statement](#the-try-with-resources-statement)
+- [Read CSV file and put it into Java object](#read-csv-file-and-put-it-into-java-object)
+
 In this tutorial we will explore Streams with file processing.
 
 In this example I will read CSV file and proccessing the content of the file.
