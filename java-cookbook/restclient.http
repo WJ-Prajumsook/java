@@ -19,3 +19,9 @@ Content-Type: application/json
 # @name ConvertToCode
 GET http://localhost:8080/currency/code HTTP/1.1
 Content-Type: application/json
+
+###
+
+# @name Crypto
+GET http://localhost:8080/crypto HTTP/1.1
+Content-Type: application/json
