@@ -8,7 +8,7 @@
 You can use method reference to access an existing method like a lambda expression.
 
 ## Video on Youtube
-[![Part 1](https://img.youtube.com/vi/i2luxp4e714/maxresdefault.jpg)](https://youtu.be/i2luxp4e714)
+[![Part 1](https://img.youtube.com/vi/nqR2N-Mdhdw/maxresdefault.jpg)](https://youtu.be/nqR2N-Mdhdw)
 
 How to use?
 ```
